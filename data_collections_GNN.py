@@ -93,3 +93,5 @@ with open(csv_file, 'a+') as csvfile:
     except UnknownObjectException:
       pr_number += 1
       continue
+    except AttributeError:
+      continue
